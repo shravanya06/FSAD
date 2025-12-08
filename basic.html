@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input,select{
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Student Registration</h2>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="text" placeholder="Enter your phone number" required>
+
+            <label>Date of Birth</label>
+            <input type="date" required>
+
+            <label>Course</label>
+            <select>
+                <option>Select Course</option>
+                <option>B.Tech</option>
+                <option>BBA</option>
+                <option>BCA</option>
+                <option>MBA</option>
+                <option>MCA</option>
+            </select>
+
+            <label>Gender</label>
+            <select>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
