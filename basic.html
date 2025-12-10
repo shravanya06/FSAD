@@ -1,92 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration Form</title>
-
+    <title>Product Table</title>
     <style>
-        body{
+        body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
         }
-        .container{
-            width: 400px;
+
+        table {
+            border-collapse: separate;   /* allows spacing between cells */
+            border-spacing: 20px 15px;   /* column space = 20px, row space = 15px */
+            width: 85%;
             margin: auto;
-            margin-top: 50px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            font-size: 20px;
+            border: 3px solid black;     /* OUTLINE for entire table */
         }
-        h2{
+
+        th, td {
+            border: 2px solid black;     /* CLEAR BORDER for all cells */
+            padding: 15px;
             text-align: center;
-            margin-bottom: 20px;
         }
-        input,select{
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border: 1px solid #999;
-            border-radius: 5px;
+
+        th {
+            background-color: #f4f4f4;
         }
-        button{
-            width: 100%;
-            padding: 10px;
-            background: #4CAF50;
-            border: none;
-            color: white;
+
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        button {
+            padding: 10px 20px;
             font-size: 16px;
-            border-radius: 5px;
             cursor: pointer;
-        }
-        button:hover{
-            background: green;
         }
     </style>
 </head>
 
 <body>
+    <table>
+        <tr>
+            <th>P_ID</th>
+            <th>P_NAME</th>
+            <th>P_COST</th>
+            <th>P_IMAGE</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+        </tr>
 
-    <div class="container">
-        <h2>Student Registration</h2>
+        <tr>
+            <td>111</td>
+            <td>P_ONE</td>
+            <td>₹10000</td>
+            <td><img src="https://images.openai.com/thumbnails/url/xkGqEHicu5mZUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw7K87Hw9iyryDPz1A0ocg7OKfN3rCiwSHZ08zDyzQhxTHYtjUwpqEhLDMv3dfQzDHdVKwYAWEAl9Q?utm_source=chatgpt.com" alt="Flipkart"></td>
+            <td><button>UPDATE</button></td>
+            <td><button>DELETE</button></td>
+        </tr>
 
-        <form>
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter your name" required>
+        <tr>
+            <td>222</td>
+            <td>P_TWO</td>
+            <td>₹20000</td>
+            <td><img src="https://static.vecteezy.com/system/resources/previews/019/136/319/non_2x/amazon-logo-amazon-icon-free-free-vector.jpg" alt="Amazon"></td>
+            <td><button>UPDATE</button></td>
+            <td><button>DELETE</button></td>
+        </tr>
 
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email" required>
-
-            <label>Phone Number</label>
-            <input type="text" placeholder="Enter your phone number" required>
-
-            <label>Date of Birth</label>
-            <input type="date" required>
-
-            <label>Course</label>
-            <select>
-                <option>Select Course</option>
-                <option>B.Tech</option>
-                <option>BBA</option>
-                <option>BCA</option>
-                <option>MBA</option>
-                <option>MCA</option>
-            </select>
-
-            <label>Gender</label>
-            <select>
-                <option>Select Gender</option>
-                <option>Male</option>
-                <option>Female</option>
-                <option>Other</option>
-            </select>
-
-            <button type="submit">Register</button>
-        </form>
-    </div>
-
+        <tr>
+            <td>333</td>
+            <td>P_THREE</td>
+            <td>₹30000</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/65c5da9f878952603e370d03_Myntra-Logo_1.svg/2560px-65c5da9f878952603e370d03_Myntra-Logo_1.svg.png?utm_source=chatgpt.com" alt="Myntra"></td>
+            <td><button>UPDATE</button></td>
+            <td><button>DELETE</button></td>
+        </tr>
+    </table>
 </body>
 </html>
